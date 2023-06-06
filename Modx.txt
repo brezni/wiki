@@ -1,0 +1,9 @@
+// snippet name: CheckLogin
+// Check if User is logged in to current context
+if ($modx->user->hasSessionContext($modx->context->get('key'))) {
+    $output = 'Logged in';
+} else {
+    $output = 'Not logged in';
+}
+
+return $output;
